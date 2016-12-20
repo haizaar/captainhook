@@ -106,7 +106,7 @@ Currently supported checks are
   [PEP 328](https://www.python.org/dev/peps/pep-0328/)).
 
 - [yamllint](https://pypi.python.org/pypi/yamllint)
-  Runs yamllint on staged files and check for syntax validity, weirdnesses
+  Runs yamllint_ on staged files and check for syntax validity, weirdnesses
   like key repetition and cosmetic problems such as lines length, trailing
   spaces, indentation, etc.
 
