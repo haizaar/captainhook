@@ -25,4 +25,6 @@ def run(files, temp_folder):
     py_files = filter_python_files(files)
 
     # --quiet because isort >= 4.1 outputs its logo in the console by default.
-    return bash('isort -df --quiet {0}'.format(' '.join(py_files))).value()
+    if py_files:
+        return bash('isort -df --quiet {0}'.format(' '.join(py_files))).value()
+    return ''
