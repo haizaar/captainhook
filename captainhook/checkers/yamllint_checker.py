@@ -8,6 +8,7 @@ DEFAULT = 'off'
 CHECK_NAME = 'yamllint'
 NO_YAMLLINT_MSG = ("yamllint is required for the yamllint plugin.\n"
                 "`pip install yamllint` or turn it off in your {} file.".format(get_config_file()))
+REQUIRED_FILES = ['.yamllint']
 
 
 def _filter_yaml_files(files):
