@@ -105,6 +105,11 @@ Currently supported checks are
   to [PEP 8](https://www.python.org/dev/peps/pep-0008/) and 
   [PEP 328](https://www.python.org/dev/peps/pep-0328/)).
 
+- [yamllint](https://pypi.python.org/pypi/yamllint)
+  Runs yamllint on staged files and check for syntax validity, weirdnesses
+  like key repetition and cosmetic problems such as lines length, trailing
+  spaces, indentation, etc.
+
 - merge_marks: Rejects the commit if there are any unresolved merge marks in
   staged files.
 
