@@ -13,13 +13,10 @@ REQUIRED_FILES = ['.yamllint']
 
 
 def _filter_yaml_files(files):
-    "Get all python files from the list of files."
+    "Get all yaml files from the list of files. The extention based filter"
     yaml_files = []
     for f in files:
-        # If we end in .py, or if we don't have an extension and file says that
-        # we are a python script, then add us to the list
         extension = os.path.splitext(f)[-1]
-
         if extension:
             if extension in ('.yaml', 'yml'):
                 yaml_files.append(f)
